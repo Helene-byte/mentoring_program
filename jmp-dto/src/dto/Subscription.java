@@ -9,4 +9,6 @@ public class Subscription {
     String bankcard;
     LocalDate startDate;
 
+    public Subscription(Object number, LocalDate now) {
+    }
 }
