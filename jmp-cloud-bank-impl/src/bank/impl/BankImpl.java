@@ -14,9 +14,9 @@ public class BankImpl implements Bank {
 
         if (bankCardType == BankCardType.CREDIT){
             return new CreditBankCard(random.nextLong()+"", user);
-        }else if(bankCardType == BankCardType.DEBIT){
+        }else {
             return new DebitBankCard(random.nextLong()+"", user);
         }
-        return null;
+
     }
 }
