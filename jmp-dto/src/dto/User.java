@@ -10,4 +10,12 @@ public class User {
     String surname;
     LocalDate birthday;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }

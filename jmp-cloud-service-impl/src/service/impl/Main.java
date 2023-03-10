@@ -19,6 +19,7 @@ public class Main {
         User user2 = new User("Jane", "Eyre", LocalDate.of(1980, 12, 2));
 
         final BankCard bankCard = bank.createBankCard(BankCardType.DEBIT,user1);
+        service.subscribe(bankCard);
         service.subscribe(bank.createBankCard(BankCardType.DEBIT, user1));
         service.subscribe(bank.createBankCard(BankCardType.CREDIT, user1));
         service.subscribe(bank.createBankCard(BankCardType.DEBIT, user2));
