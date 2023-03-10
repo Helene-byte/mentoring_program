@@ -14,7 +14,7 @@ public interface Service {
     void subscribe(BankCard bankCard);
     Optional<Subscription> getSubscriptionByBankCardNumber(String bankCardNumber);
     List<User> getAllUsers();
-    int PAYABLE_AGE   = 18;
+    int PAYABLE_AGE = 18;
     default double getAverageUsersAge(){
         return getAllUsers().stream().
                 mapToLong(user -> ChronoUnit.YEARS.between(user.getBirthday(), LocalDate.now())).average().getAsDouble();

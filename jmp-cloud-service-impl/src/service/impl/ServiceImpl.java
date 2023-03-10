@@ -31,6 +31,6 @@ public class ServiceImpl implements Service  {
 
     @Override
     public List<User> getAllUsers() {
-        return bankCards.stream().map(BankCard::getUser).collect(Collectors.toList());
+        return bankCards.stream().map(BankCard::getUser).collect(Collectors.toUnmodifiableList());
     }
 }
