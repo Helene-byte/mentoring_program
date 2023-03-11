@@ -25,6 +25,7 @@ public class Main {
         service.subscribe(bank.createBankCard(BankCardType.DEBIT, user2));
         service.subscribe(bank.createBankCard(BankCardType.DEBIT, user2));
 
+
         System.out.println(service.getAllUsers());
         System.out.println(service.getSubscriptionByBankCardNumber(bankCard.getNumber()));
 
