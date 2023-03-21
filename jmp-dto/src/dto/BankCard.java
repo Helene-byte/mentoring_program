@@ -1,9 +1,12 @@
 package dto;
-import lombok.Data;
+import lombok.*;
 
-@Data
+@AllArgsConstructor
+@Getter
+@Setter
 public abstract class BankCard {
     String number;
     User user;
+
 
 }

@@ -9,4 +9,8 @@ public class Subscription {
     String bankcard;
     LocalDate startDate;
 
+    public Subscription(String bankcard, LocalDate startDate) {
+        this.bankcard = bankcard;
+        this.startDate = startDate;
+    }
 }
