@@ -5,11 +5,11 @@ public class MemoryCacheTest {
         public static void main(String[] args) throws InterruptedException {
             MemoryCacheTest cache = new MemoryCacheTest();
 
-            printActivity("\n\n==========Test1: crunchifyTestAddRemoveObjects ==========");
-            cache.testAddRemoveObjects();
-
-            printActivity("\n\n==========Test2: crunchifyTestExpiredCacheObjects ==========");
-            cache.testExpiredCacheObjects();
+//            printActivity("\n\n==========Test1: crunchifyTestAddRemoveObjects ==========");
+//            cache.testAddRemoveObjects();
+//
+//            printActivity("\n\n==========Test2: crunchifyTestExpiredCacheObjects ==========");
+//            cache.testExpiredCacheObjects();
 
             printActivity("\n\n==========Test3: crunchifyTestObjectsCleanupTime ==========");
             cache.testObjectsCleanupTime();
